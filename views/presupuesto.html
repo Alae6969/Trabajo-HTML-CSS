@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Presupuesto - WebCraft Solutions</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>WebCraft<span>Solutions</span></h1>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link"><i class="fas fa-box"></i> Productos</a></li>
+                    <li class="nav-item"><a href="presupuesto.html" class="nav-link active"><i class="fas fa-file-invoice-dollar"></i> Presupuesto</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="budget-main">
+        <div class="container">
+            <h1 class="page-title">Solicita tu Presupuesto</h1>
+            
+            <div class="budget-container">
+                <div class="budget-form-container">
+                    <h2>Solicita tu Presupuesto Personalizado</h2>
+                    <form class="budget-form" id="budgetForm">
+                        <div class="form-group">
+                            <label for="budgetName">Nombre completo *</label>
+                            <input type="text" id="budgetName" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budgetEmail">Email *</label>
+                            <input type="email" id="budgetEmail" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budgetPhone">Teléfono *</label>
+                            <input type="tel" id="budgetPhone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Empresa / Proyecto</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serviceType">Tipo de servicio *</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="web-design">Diseño Web</option>
+                                <option value="ecommerce">Tienda Online (E-commerce)</option>
+                                <option value="landing">Landing Page</option>
+                                <option value="blog">Blog Profesional</option>
+                                <option value="custom">Desarrollo a Medida</option>
+                                <option value="product-template">Plantilla de Producto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budgetRange">Presupuesto aproximado *</label>
+                            <select id="budgetRange" name="budgetRange" required>
+                                <option value="">Selecciona un rango</option>
+                                <option value="500-1000">500€ - 1.000€</option>
+                                <option value="1000-3000">1.000€ - 3.000€</option>
+                                <option value="3000-5000">3.000€ - 5.000€</option>
+                                <option value="5000+">Más de 5.000€</option>
+                                <option value="not-sure">No estoy seguro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="deadline">Fecha límite aproximada</label>
+                            <input type="date" id="deadline" name="deadline">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectDescription">Descripción del proyecto *</label>
+                            <textarea id="projectDescription" name="description" rows="6" required placeholder="Describe tu proyecto, funcionalidades necesarias, referencias de sitios web que te gusten, etc."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="budgetPrivacy" name="privacy" required>
+                            <label for="budgetPrivacy">Acepto la <a href="#">Política de Privacidad</a></label>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Solicitar Presupuesto</button>
+                            <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="budget-info">
+                    <h2>¿Cómo funciona?</h2>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h3>Solicitud</h3>
+                            <p>Completa el formulario con los detalles de tu proyecto</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h3>Análisis</h3>
+                            <p>Analizamos tus necesidades y te contactamos para aclarar detalles</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h3>Propuesta</h3>
+                            <p>Te enviamos un presupuesto detallado y personalizado</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <h3>Desarrollo</h3>
+                            <p>Una vez aceptado, comenzamos a trabajar en tu proyecto</p>
+                        </div>
+                    </div>
+                    
+                    <div class="budget-benefits">
+                        <h2>¿Por qué solicitar presupuesto con nosotros?</h2>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> Presupuesto personalizado y sin compromiso</li>
+                            <li><i class="fas fa-check"></i> Análisis detallado de tus necesidades</li>
+                            <li><i class="fas fa-check"></i> Transparencia en costes y plazos</li>
+                            <li><i class="fas fa-check"></i> Asesoramiento técnico gratuito</li>
+                            <li><i class="fas fa-check"></i> Propuestas adaptadas a tu presupuesto</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="budget-note">
+                        <h3><i class="fas fa-info-circle"></i> Nota importante</h3>
+                        <p>El presupuesto es completamente gratuito y sin compromiso. Nuestro equipo te contactará en menos de 24 horas hábiles para discutir los detalles de tu proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WebCraft Solutions</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Desarrollo Web, 123<br>28080 Madrid, España</p>
+                    <p><i class="fas fa-phone"></i> +34 912 345 678</p>
+                    <p><i class="fas fa-envelope"></i> info@webcraftsolutions.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 WebCraft Solutions. Todos los derechos reservados.</p>
+                <p><a href="#" class="legal-link">Política de Privacidad</a> | <a href="#" class="legal-link">Aviso Legal</a> | <a href="#" class="legal-link">Cookies</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu');
+            const nav = document.querySelector('.nav');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+            
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+
+            // Agregar limpieza automática del formulario al enviar
+            const budgetForm = document.getElementById('budgetForm');
+            if (budgetForm) {
+                budgetForm.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Evitar envío real para demostración
+                    
+                    // Mostrar mensaje de confirmación
+                    alert('¡Gracias! Tu solicitud de presupuesto ha sido enviada. Te contactaremos en menos de 24 horas hábiles.');
+                    
+                    // Limpiar formulario después de enviar
+                    setTimeout(() => {
+                        this.reset();
+                    }, 100);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!-- 
+    GALERÍA DE PRODUCTOS - WebCraft Solutions
+    Página que muestra nuestros productos en formato de cuadrícula
+    Cada producto incluye imagen, descripción, tecnologías y precio
+    Modal interactivo con detalles completos
+    Código validado con W3C Validator
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - WebCraft Solutions</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>WebCraft<span>Solutions</span></h1>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link active"><i class="fas fa-box"></i> Productos</a></li>
+                    <li class="nav-item"><a href="presupuesto.html" class="nav-link"><i class="fas fa-file-invoice-dollar"></i> Presupuesto</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="portfolio-main">
+        <div class="container">
+            <h1 class="page-title">Nuestros Productos</h1>
+            <p class="page-subtitle">Soluciones web pre-diseñadas que puedes personalizar</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Tienda online de moda">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" data-product="1">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h2>Plantilla E-commerce</h2>
+                        <p>Tienda online completa con carrito de compra y panel de administración.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio">299€</span>
+                            <a href="presupuesto.html" class="btn-producto">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Blog de viajes">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" data-product="2">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h2>Plantilla Blog</h2>
+                        <p>Diseño moderno para blog con sistema de comentarios y SEO integrado.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>WordPress</span>
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio">199€</span>
+                            <a href="presupuesto.html" class="btn-producto">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Dashboard de análisis">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" data-product="3">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h2>Panel de Control</h2>
+                        <p>Dashboard con gráficos interactivos y reportes automatizados.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio">399€</span>
+                            <a href="presupuesto.html" class="btn-producto">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Sitio web de restaurante">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" data-product="4">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h2>Web Restaurante</h2>
+                        <p>Sitio web con menú digital, reservas online y galería de platos.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio">249€</span>
+                            <a href="presupuesto.html" class="btn-producto">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Aplicación de fitness">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" data-product="5">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h2>App Fitness</h2>
+                        <p>App web de seguimiento de entrenamientos y planes personalizados.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio">349€</span>
+                            <a href="presupuesto.html" class="btn-producto">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Sitio web de arquitectura">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" data-product="6">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h2>Portfolio Creativo</h2>
+                        <p>Diseño para artistas con galería y presentación de proyectos.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Three.js</span>
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio">279€</span>
+                            <a href="presupuesto.html" class="btn-producto">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="services" style="margin-top: 80px;">
+                <div class="container">
+                    <h2 class="section-title">Beneficios</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Implementación Rápida</h3>
+                            <p>Productos listos para usar en pocos días.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Diseño Responsive</h3>
+                            <p>Se adaptan a cualquier dispositivo.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Código Limpio</h3>
+                            <p>Código organizado y fácil de personalizar.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3>Soporte Técnico</h3>
+                            <p>Asistencia durante 6 meses.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="product-modal" id="productModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Detalles del Producto</h2>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-product-image">
+                    <img id="modalProductImage" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Vista previa del producto">
+                </div>
+                <div class="modal-product-info">
+                    <h3 id="modalProductTitle">Producto seleccionado</h3>
+                    <p id="modalProductDescription">Descripción del producto</p>
+                    
+                    <div class="modal-tech-stack">
+                        <h4>Tecnologías:</h4>
+                        <div class="tech-tags" id="modalProductTech">
+                            <span class="tech-tag">Tecnología</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h4>Características:</h4>
+                        <ul id="modalProductFeatures">
+                            <li><i class="fas fa-check"></i> Característica 1</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-specs">
+                        <h4>Especificaciones:</h4>
+                        <div class="specs-grid" id="modalProductSpecs">
+                            <div class="spec-item">
+                                <span class="spec-key">Especificación:</span>
+                                <span class="spec-value">Valor</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-price-section">
+                        <div class="price-info">
+                            <span class="price-label">Precio:</span>
+                            <span class="modal-price" id="modalProductPrice">0€</span>
+                        </div>
+                        <div class="modal-actions">
+                            <a href="presupuesto.html" class="btn btn-primary">Solicitar</a>
+                            <button class="btn btn-secondary close-modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WebCraft Solutions</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Carrer de l'Alguer, 7-9<br>12550 Almassora, Castellón</p>
+                    <p><i class="fas fa-phone"></i> +34 912 345 678</p>
+                    <p><i class="fas fa-envelope"></i> info@webcraftsolutions.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 WebCraft Solutions. Todos los derechos reservados.</p>
+                <p><a href="#" class="legal-link">Política de Privacidad</a> | <a href="#" class="legal-link">Aviso Legal</a> | <a href="#" class="legal-link">Cookies</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu');
+            const nav = document.querySelector('.nav');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+            
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            
+            const productosDetallados = {
+                1: {
+                    title: "Plantilla E-commerce",
+                    description: "Tienda online completa con carrito de compra y panel de administración.",
+                    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                    tech: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap"],
+                    features: [
+                        "Carrito de compra interactivo",
+                        "Integración con PayPal y Stripe",
+                        "Panel de administración",
+                        "Gestión de inventario",
+                        "Optimización SEO"
+                    ],
+                    specs: {
+                        "Páginas": "12+",
+                        "Tiempo": "3-5 días",
+                        "Soporte": "6 meses"
+                    },
+                    price: "299€"
+                },
+                2: {
+                    title: "Plantilla Blog",
+                    description: "Diseño moderno para blog con sistema de comentarios y SEO integrado.",
+                    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    tech: ["HTML5", "CSS3", "JavaScript", "WordPress", "PHP", "MySQL"],
+                    features: [
+                        "Sistema de comentarios",
+                        "Categorías y etiquetas",
+                        "Optimización SEO",
+                        "Integración redes sociales",
+                        "Newsletter integrado"
+                    ],
+                    specs: {
+                        "Plantillas": "5 diferentes",
+                        "Widgets": "8+",
+                        "Soporte": "6 meses"
+                    },
+                    price: "199€"
+                },
+                3: {
+                    title: "Panel de Control",
+                    description: "Dashboard con gráficos interactivos y reportes automatizados.",
+                    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80",
+                    tech: ["HTML5", "CSS3", "JavaScript", "React", "Chart.js", "API REST"],
+                    features: [
+                        "Gráficos interactivos",
+                        "Reportes automatizados",
+                        "Dashboard personalizable",
+                        "Multi-usuario con roles"
+                    ],
+                    specs: {
+                        "Gráficos": "10+ tipos",
+                        "Usuarios": "Ilimitados",
+                        "Soporte": "12 meses"
+                    },
+                    price: "399€"
+                },
+                4: {
+                    title: "Web Restaurante",
+                    description: "Sitio web con menú digital, reservas online y galería de platos.",
+                    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "PHP", "MySQL"],
+                    features: [
+                        "Menú digital con fotos",
+                        "Reservas online",
+                        "Galería de platos",
+                        "Integración Google Maps"
+                    ],
+                    specs: {
+                        "Secciones": "8+",
+                        "Platos": "100+",
+                        "Soporte": "6 meses"
+                    },
+                    price: "249€"
+                },
+                5: {
+                    title: "App Fitness",
+                    description: "App web de seguimiento de entrenamientos y planes personalizados.",
+                    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                    tech: ["HTML5", "CSS3", "JavaScript", "Vue.js", "Firebase", "PWA"],
+                    features: [
+                        "Seguimiento entrenamientos",
+                        "Progreso con gráficos",
+                        "Planes personalizados",
+                        "Modo offline"
+                    ],
+                    specs: {
+                        "Ejercicios": "200+",
+                        "Planes": "15+",
+                        "Soporte": "8 meses"
+                    },
+                    price: "349€"
+                },
+                6: {
+                    title: "Portfolio Creativo",
+                    description: "Diseño para artistas con galería y presentación de proyectos.",
+                    image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    tech: ["HTML5", "CSS3", "JavaScript", "Three.js", "GSAP", "WebGL"],
+                    features: [
+                        "Galería 3D interactiva",
+                        "Presentación proyectos",
+                        "Animaciones avanzadas",
+                        "Modo oscuro/claro"
+                    ],
+                    specs: {
+                        "Efectos 3D": "10+",
+                        "Proyectos": "20+",
+                        "Soporte": "6 meses"
+                    },
+                    price: "279€"
+                }
+            };
+            
+            const modal = document.getElementById('productModal');
+            const modalClose = document.querySelector('.modal-close');
+            const closeModalBtn = document.querySelector('.close-modal');
+            const modalOverlay = document.querySelector('.modal-overlay');
+            const portfolioLinks = document.querySelectorAll('.portfolio-link');
+            
+            portfolioLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const productId = this.getAttribute('data-product');
+                    const producto = productosDetallados[productId];
+                    
+                    if (producto) {
+                        document.getElementById('modalProductImage').src = producto.image;
+                        document.getElementById('modalProductImage').alt = producto.title;
+                        document.getElementById('modalProductTitle').textContent = producto.title;
+                        document.getElementById('modalProductDescription').textContent = producto.description;
+                        document.getElementById('modalProductPrice').textContent = producto.price;
+                        
+                        const techContainer = document.getElementById('modalProductTech');
+                        techContainer.innerHTML = '';
+                        producto.tech.forEach(tech => {
+                            const span = document.createElement('span');
+                            span.className = 'tech-tag';
+                            span.textContent = tech;
+                            techContainer.appendChild(span);
+                        });
+                        
+                        const featuresContainer = document.getElementById('modalProductFeatures');
+                        featuresContainer.innerHTML = '';
+                        producto.features.forEach(feature => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<i class="fas fa-check"></i> ${feature}`;
+                            featuresContainer.appendChild(li);
+                        });
+                        
+                        const specsContainer = document.getElementById('modalProductSpecs');
+                        specsContainer.innerHTML = '';
+                        for (const [key, value] of Object.entries(producto.specs)) {
+                            const div = document.createElement('div');
+                            div.className = 'spec-item';
+                            div.innerHTML = `
+                                <span class="spec-key">${key}:</span>
+                                <span class="spec-value">${value}</span>
+                            `;
+                            specsContainer.appendChild(div);
+                        }
+                        
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+            
+            const closeModal = () => {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            };
+            
+            modalClose.addEventListener('click', closeModal);
+            closeModalBtn.addEventListener('click', closeModal);
+            modalOverlay.addEventListener('click', closeModal);
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
